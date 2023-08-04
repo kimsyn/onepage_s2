@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Onepage_s2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<style>
+    
+    :root {--mainColor1: #2B5D97;         rgb(43, 93, 151);
+    --mainColor2: #02A1BD;         rgb(2, 161, 189);
+    --mainColor3: #4AD3E1;         rgb(74, 211, 225);
+    --subColor1: #EFC483;           rgb(239, 196, 131);
+    --subColor2: #EFDB9A;           rgb(239, 219, 154);
+}
+
+#second {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;  
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    animation: fade 6s infinite;
+}
+
+.slide:nth-child(1) {
+    animation-delay: 0s;
+}
+.slide:nth-child(2) {
+    animation-delay: 2s;
+}
+.slide:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.slide:nth-child(4) {
+    animation-delay: 6s;
+}
+
+.slide:nth-child(5) {
+    animation-delay: 8s;
+}
+
+.slide:nth-child(6) {
+    animation-delay: 10s;
+}
+
+.slide:nth-child(7) {
+    animation-delay: 12s;
+}
+
+.slide:nth-child(8) {
+    animation-delay: 14s;
+}
+
+.slide:nth-child(9) {
+    animation-delay: 16s;
+}
+
+
+@keyframes fade {
+    0% {opacity: 0;}
+    33.33% {opacity: 1;}
+    66.66% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+
+#h1-1{
+    font-size: 100px;
+    text-align: center;
+    mix-blend-mode: overlay;
+    font-weight: bold;
+    color: var(--mainColor3);
+    font-family: 'DM Serif Display', serif;
+    background: linear-gradient(to right top, var(--mainColor3), var(--mainColor2), var(--subColor2));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+#p1-1{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.overlay {
+    align-items: center;
+
+    transform: translateX(50%);
+    transform: translateY(160%);
+ 
+    display: flex;
+
+   
+    flex-direction: column;
+    
+
+    justify-content: center;
+    
+ 
+    
+    width:100%;
+    z-index: 100;
+    color: white;
+
+    text-align: center;
+    vertical-align: text-bottom;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.overlay > marquee{
+    font-size: 30px;
+    font-family: 'DM Serif Display', serif;
+    text-shadow: 2px 4px 1px black;
+    letter-spacing: 10px;
+    position: absolute;
+    top: 190px;
+}
+
+.p1-1{
+    color: #02A1BD;
+    text-br
+}
+
+.span-1{
+    color:  var(--subColor1);
+}
+.span-2{
+    color: var(--mainColor1);
+}
+
+.span-3{
+    color: var(--mainColor2);
+}
+
+.span-0{
+    color: var(--mainColor3);
+    text-shadow: 2px px 1px var(--subColor2);
+}
+
+
+
+
+</style>
+</head>	
+<body>
+    <section id="second" class="wrapper">
+
+        <div class="slide">
+            <img src="./세븐틴1.png" style="width:100%">
+        </div>
+
+        <div class="slide">
+            <img src="./뉴진스1.png" style="width:100%">
+        </div>
+
+        <div class="slide">
+            <img src="./씨스타1.png" style="width:100%">
+        </div>
+
+        <div class="slide">
+            <img src="./세븐틴2.png" style="width:100%">
+        </div>
+
+        <div class="slide">
+            <img src="./뉴진스2.png" style="width:100%">
+        </div>
+
+
+        <div class="slide">
+            <img src="./씨스타2.png" style="width:100%">
+        </div>
+
+        <div class="slide">
+            <img src="./세븐틴3.png" style="width:100%">
+        </div>
+
+        <div class="slide">
+            <img src="./뉴진스3.png" style="width:100%">
+        </div>
+
+ 
+        <div class="slide">
+            <img src="./씨스타3.png" style="width:100%">
+        </div>
+
+        <div class="overlay">
+            <h1 id="h1-1">Summer Festival</h1>
+            <p id="p1-1"><span class="span-0">청량지수 200% ♩</span> 듣기만 해도 시원-해지는 여름 아티스트🌊 </p>
+            <marquee> <span class="span-1">Seventeen</span> · <span class="span-2">Newjeans</span> ·  <span class="span-3"> Sistar </span></marquee>
+            
+        </div>
+    </section>
+
+</body>  
+</html>
